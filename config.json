@@ -1,0 +1,17 @@
+{
+    "apiPackage":"io.imager200.client",
+    "modelPackage": "io.imager200.model",
+    "artifactId":"java-sdk",
+    "artifactUrl": "https://github.com/imager200/java-sdk",
+    "artifactDescription": "java client for imager200 API",
+    "groupId": "io.imager200",
+    "library": "native",
+    "developerOrganization": "imager200",
+    "developerOrganizationUrl": "https://www.imager200.io",
+    "developerEmail": "contact@imager200.io",
+    "developerName": "imager200",
+    "invokerPackage": "io.imager200",
+    "scmConnection": "",
+    "scmDeveloperConnection": "",
+    "useJakartaEe": true
+}
