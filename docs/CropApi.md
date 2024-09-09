@@ -183,7 +183,7 @@ ApiResponse<[**InfoResponse**](InfoResponse.md)>
 
 ## cropAsyncPost
 
-> InfoResponse cropAsyncPost(x0, x1, y0, y1, brightnessAsyncPostRequest)
+> InfoResponse cropAsyncPost(x0, x1, y0, y1, body)
 
 
 
@@ -216,9 +216,9 @@ public class Example {
         Integer x1 = 56; // Integer | the x coordinate of the second point of the rectangle to crop.
         Integer y0 = 56; // Integer | the y coordinate of the first point of the rectangle to crop.
         Integer y1 = 56; // Integer | the y coordinate of the second point of the rectangle to crop.
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         try {
-            InfoResponse result = apiInstance.cropAsyncPost(x0, x1, y0, y1, brightnessAsyncPostRequest);
+            InfoResponse result = apiInstance.cropAsyncPost(x0, x1, y0, y1, body);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling CropApi#cropAsyncPost");
@@ -240,7 +240,7 @@ public class Example {
 | **x1** | **Integer**| the x coordinate of the second point of the rectangle to crop. | |
 | **y0** | **Integer**| the y coordinate of the first point of the rectangle to crop. | |
 | **y1** | **Integer**| the y coordinate of the second point of the rectangle to crop. | |
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 
 ### Return type
 
@@ -264,7 +264,7 @@ public class Example {
 
 ## cropAsyncPostWithHttpInfo
 
-> ApiResponse<InfoResponse> cropAsyncPost cropAsyncPostWithHttpInfo(x0, x1, y0, y1, brightnessAsyncPostRequest)
+> ApiResponse<InfoResponse> cropAsyncPost cropAsyncPostWithHttpInfo(x0, x1, y0, y1, body)
 
 
 
@@ -298,9 +298,9 @@ public class Example {
         Integer x1 = 56; // Integer | the x coordinate of the second point of the rectangle to crop.
         Integer y0 = 56; // Integer | the y coordinate of the first point of the rectangle to crop.
         Integer y1 = 56; // Integer | the y coordinate of the second point of the rectangle to crop.
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         try {
-            ApiResponse<InfoResponse> response = apiInstance.cropAsyncPostWithHttpInfo(x0, x1, y0, y1, brightnessAsyncPostRequest);
+            ApiResponse<InfoResponse> response = apiInstance.cropAsyncPostWithHttpInfo(x0, x1, y0, y1, body);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -324,7 +324,7 @@ public class Example {
 | **x1** | **Integer**| the x coordinate of the second point of the rectangle to crop. | |
 | **y0** | **Integer**| the y coordinate of the first point of the rectangle to crop. | |
 | **y1** | **Integer**| the y coordinate of the second point of the rectangle to crop. | |
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 
 ### Return type
 
@@ -515,7 +515,7 @@ ApiResponse<[**File**](File.md)>
 
 ## cropSyncPost
 
-> File cropSyncPost(x0, x1, y0, y1, brightnessAsyncPostRequest)
+> File cropSyncPost(x0, x1, y0, y1, body)
 
 
 
@@ -548,9 +548,9 @@ public class Example {
         Integer x1 = 56; // Integer | the x coordinate of the second point of the rectangle to crop.
         Integer y0 = 56; // Integer | the y coordinate of the first point of the rectangle to crop.
         Integer y1 = 56; // Integer | the y coordinate of the second point of the rectangle to crop.
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         try {
-            File result = apiInstance.cropSyncPost(x0, x1, y0, y1, brightnessAsyncPostRequest);
+            File result = apiInstance.cropSyncPost(x0, x1, y0, y1, body);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling CropApi#cropSyncPost");
@@ -572,7 +572,7 @@ public class Example {
 | **x1** | **Integer**| the x coordinate of the second point of the rectangle to crop. | |
 | **y0** | **Integer**| the y coordinate of the first point of the rectangle to crop. | |
 | **y1** | **Integer**| the y coordinate of the second point of the rectangle to crop. | |
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 
 ### Return type
 
@@ -596,7 +596,7 @@ public class Example {
 
 ## cropSyncPostWithHttpInfo
 
-> ApiResponse<File> cropSyncPost cropSyncPostWithHttpInfo(x0, x1, y0, y1, brightnessAsyncPostRequest)
+> ApiResponse<File> cropSyncPost cropSyncPostWithHttpInfo(x0, x1, y0, y1, body)
 
 
 
@@ -630,9 +630,9 @@ public class Example {
         Integer x1 = 56; // Integer | the x coordinate of the second point of the rectangle to crop.
         Integer y0 = 56; // Integer | the y coordinate of the first point of the rectangle to crop.
         Integer y1 = 56; // Integer | the y coordinate of the second point of the rectangle to crop.
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         try {
-            ApiResponse<File> response = apiInstance.cropSyncPostWithHttpInfo(x0, x1, y0, y1, brightnessAsyncPostRequest);
+            ApiResponse<File> response = apiInstance.cropSyncPostWithHttpInfo(x0, x1, y0, y1, body);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -656,7 +656,7 @@ public class Example {
 | **x1** | **Integer**| the x coordinate of the second point of the rectangle to crop. | |
 | **y0** | **Integer**| the y coordinate of the first point of the rectangle to crop. | |
 | **y1** | **Integer**| the y coordinate of the second point of the rectangle to crop. | |
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 
 ### Return type
 

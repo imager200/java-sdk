@@ -167,7 +167,7 @@ ApiResponse<[**InfoResponse**](InfoResponse.md)>
 
 ## equalizeAsyncPost
 
-> InfoResponse equalizeAsyncPost(blurAsyncPostRequest)
+> InfoResponse equalizeAsyncPost(body)
 
 
 
@@ -196,9 +196,9 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         EqualizeApi apiInstance = new EqualizeApi(defaultClient);
-        BlurAsyncPostRequest blurAsyncPostRequest = new BlurAsyncPostRequest(); // BlurAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp
         try {
-            InfoResponse result = apiInstance.equalizeAsyncPost(blurAsyncPostRequest);
+            InfoResponse result = apiInstance.equalizeAsyncPost(body);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling EqualizeApi#equalizeAsyncPost");
@@ -216,7 +216,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **blurAsyncPostRequest** | [**BlurAsyncPostRequest**](BlurAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp | |
 
 ### Return type
 
@@ -240,7 +240,7 @@ public class Example {
 
 ## equalizeAsyncPostWithHttpInfo
 
-> ApiResponse<InfoResponse> equalizeAsyncPost equalizeAsyncPostWithHttpInfo(blurAsyncPostRequest)
+> ApiResponse<InfoResponse> equalizeAsyncPost equalizeAsyncPostWithHttpInfo(body)
 
 
 
@@ -270,9 +270,9 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         EqualizeApi apiInstance = new EqualizeApi(defaultClient);
-        BlurAsyncPostRequest blurAsyncPostRequest = new BlurAsyncPostRequest(); // BlurAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp
         try {
-            ApiResponse<InfoResponse> response = apiInstance.equalizeAsyncPostWithHttpInfo(blurAsyncPostRequest);
+            ApiResponse<InfoResponse> response = apiInstance.equalizeAsyncPostWithHttpInfo(body);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -292,7 +292,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **blurAsyncPostRequest** | [**BlurAsyncPostRequest**](BlurAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp | |
 
 ### Return type
 
@@ -467,7 +467,7 @@ ApiResponse<[**File**](File.md)>
 
 ## equalizeSyncPost
 
-> File equalizeSyncPost(blurAsyncPostRequest)
+> File equalizeSyncPost(body)
 
 
 
@@ -496,9 +496,9 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         EqualizeApi apiInstance = new EqualizeApi(defaultClient);
-        BlurAsyncPostRequest blurAsyncPostRequest = new BlurAsyncPostRequest(); // BlurAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp
         try {
-            File result = apiInstance.equalizeSyncPost(blurAsyncPostRequest);
+            File result = apiInstance.equalizeSyncPost(body);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling EqualizeApi#equalizeSyncPost");
@@ -516,7 +516,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **blurAsyncPostRequest** | [**BlurAsyncPostRequest**](BlurAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp | |
 
 ### Return type
 
@@ -540,7 +540,7 @@ public class Example {
 
 ## equalizeSyncPostWithHttpInfo
 
-> ApiResponse<File> equalizeSyncPost equalizeSyncPostWithHttpInfo(blurAsyncPostRequest)
+> ApiResponse<File> equalizeSyncPost equalizeSyncPostWithHttpInfo(body)
 
 
 
@@ -570,9 +570,9 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         EqualizeApi apiInstance = new EqualizeApi(defaultClient);
-        BlurAsyncPostRequest blurAsyncPostRequest = new BlurAsyncPostRequest(); // BlurAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp
         try {
-            ApiResponse<File> response = apiInstance.equalizeSyncPostWithHttpInfo(blurAsyncPostRequest);
+            ApiResponse<File> response = apiInstance.equalizeSyncPostWithHttpInfo(body);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -592,7 +592,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **blurAsyncPostRequest** | [**BlurAsyncPostRequest**](BlurAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp | |
 
 ### Return type
 

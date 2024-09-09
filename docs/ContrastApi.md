@@ -171,7 +171,7 @@ ApiResponse<[**InfoResponse**](InfoResponse.md)>
 
 ## contrastAsyncPost
 
-> InfoResponse contrastAsyncPost(brightnessAsyncPostRequest, percentage)
+> InfoResponse contrastAsyncPost(body, percentage)
 
 
 
@@ -200,10 +200,10 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         ContrastApi apiInstance = new ContrastApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         BigDecimal percentage = new BigDecimal("0"); // BigDecimal | controls the contrast level
         try {
-            InfoResponse result = apiInstance.contrastAsyncPost(brightnessAsyncPostRequest, percentage);
+            InfoResponse result = apiInstance.contrastAsyncPost(body, percentage);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling ContrastApi#contrastAsyncPost");
@@ -221,7 +221,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **percentage** | **BigDecimal**| controls the contrast level | [optional] [default to 0] |
 
 ### Return type
@@ -246,7 +246,7 @@ public class Example {
 
 ## contrastAsyncPostWithHttpInfo
 
-> ApiResponse<InfoResponse> contrastAsyncPost contrastAsyncPostWithHttpInfo(brightnessAsyncPostRequest, percentage)
+> ApiResponse<InfoResponse> contrastAsyncPost contrastAsyncPostWithHttpInfo(body, percentage)
 
 
 
@@ -276,10 +276,10 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         ContrastApi apiInstance = new ContrastApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         BigDecimal percentage = new BigDecimal("0"); // BigDecimal | controls the contrast level
         try {
-            ApiResponse<InfoResponse> response = apiInstance.contrastAsyncPostWithHttpInfo(brightnessAsyncPostRequest, percentage);
+            ApiResponse<InfoResponse> response = apiInstance.contrastAsyncPostWithHttpInfo(body, percentage);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -299,7 +299,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **percentage** | **BigDecimal**| controls the contrast level | [optional] [default to 0] |
 
 ### Return type
@@ -479,7 +479,7 @@ ApiResponse<[**File**](File.md)>
 
 ## contrastSyncPost
 
-> File contrastSyncPost(brightnessAsyncPostRequest, percentage)
+> File contrastSyncPost(body, percentage)
 
 
 
@@ -508,10 +508,10 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         ContrastApi apiInstance = new ContrastApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         BigDecimal percentage = new BigDecimal("0"); // BigDecimal | controls the contrast level
         try {
-            File result = apiInstance.contrastSyncPost(brightnessAsyncPostRequest, percentage);
+            File result = apiInstance.contrastSyncPost(body, percentage);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling ContrastApi#contrastSyncPost");
@@ -529,7 +529,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **percentage** | **BigDecimal**| controls the contrast level | [optional] [default to 0] |
 
 ### Return type
@@ -554,7 +554,7 @@ public class Example {
 
 ## contrastSyncPostWithHttpInfo
 
-> ApiResponse<File> contrastSyncPost contrastSyncPostWithHttpInfo(brightnessAsyncPostRequest, percentage)
+> ApiResponse<File> contrastSyncPost contrastSyncPostWithHttpInfo(body, percentage)
 
 
 
@@ -584,10 +584,10 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         ContrastApi apiInstance = new ContrastApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         BigDecimal percentage = new BigDecimal("0"); // BigDecimal | controls the contrast level
         try {
-            ApiResponse<File> response = apiInstance.contrastSyncPostWithHttpInfo(brightnessAsyncPostRequest, percentage);
+            ApiResponse<File> response = apiInstance.contrastSyncPostWithHttpInfo(body, percentage);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -607,7 +607,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **percentage** | **BigDecimal**| controls the contrast level | [optional] [default to 0] |
 
 ### Return type

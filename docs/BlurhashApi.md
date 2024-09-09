@@ -167,7 +167,7 @@ ApiResponse<[**InfoResponse**](InfoResponse.md)>
 
 ## blurhashAsyncPost
 
-> InfoResponse blurhashAsyncPost(blurAsyncPostRequest)
+> InfoResponse blurhashAsyncPost(body)
 
 
 
@@ -196,9 +196,9 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         BlurhashApi apiInstance = new BlurhashApi(defaultClient);
-        BlurAsyncPostRequest blurAsyncPostRequest = new BlurAsyncPostRequest(); // BlurAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp
         try {
-            InfoResponse result = apiInstance.blurhashAsyncPost(blurAsyncPostRequest);
+            InfoResponse result = apiInstance.blurhashAsyncPost(body);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling BlurhashApi#blurhashAsyncPost");
@@ -216,7 +216,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **blurAsyncPostRequest** | [**BlurAsyncPostRequest**](BlurAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp | |
 
 ### Return type
 
@@ -240,7 +240,7 @@ public class Example {
 
 ## blurhashAsyncPostWithHttpInfo
 
-> ApiResponse<InfoResponse> blurhashAsyncPost blurhashAsyncPostWithHttpInfo(blurAsyncPostRequest)
+> ApiResponse<InfoResponse> blurhashAsyncPost blurhashAsyncPostWithHttpInfo(body)
 
 
 
@@ -270,9 +270,9 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         BlurhashApi apiInstance = new BlurhashApi(defaultClient);
-        BlurAsyncPostRequest blurAsyncPostRequest = new BlurAsyncPostRequest(); // BlurAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp
         try {
-            ApiResponse<InfoResponse> response = apiInstance.blurhashAsyncPostWithHttpInfo(blurAsyncPostRequest);
+            ApiResponse<InfoResponse> response = apiInstance.blurhashAsyncPostWithHttpInfo(body);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -292,7 +292,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **blurAsyncPostRequest** | [**BlurAsyncPostRequest**](BlurAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp | |
 
 ### Return type
 
@@ -467,7 +467,7 @@ ApiResponse<[**File**](File.md)>
 
 ## blurhashSyncPost
 
-> File blurhashSyncPost(blurAsyncPostRequest)
+> File blurhashSyncPost(body)
 
 
 
@@ -496,9 +496,9 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         BlurhashApi apiInstance = new BlurhashApi(defaultClient);
-        BlurAsyncPostRequest blurAsyncPostRequest = new BlurAsyncPostRequest(); // BlurAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp
         try {
-            File result = apiInstance.blurhashSyncPost(blurAsyncPostRequest);
+            File result = apiInstance.blurhashSyncPost(body);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling BlurhashApi#blurhashSyncPost");
@@ -516,7 +516,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **blurAsyncPostRequest** | [**BlurAsyncPostRequest**](BlurAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp | |
 
 ### Return type
 
@@ -540,7 +540,7 @@ public class Example {
 
 ## blurhashSyncPostWithHttpInfo
 
-> ApiResponse<File> blurhashSyncPost blurhashSyncPostWithHttpInfo(blurAsyncPostRequest)
+> ApiResponse<File> blurhashSyncPost blurhashSyncPostWithHttpInfo(body)
 
 
 
@@ -570,9 +570,9 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         BlurhashApi apiInstance = new BlurhashApi(defaultClient);
-        BlurAsyncPostRequest blurAsyncPostRequest = new BlurAsyncPostRequest(); // BlurAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp
         try {
-            ApiResponse<File> response = apiInstance.blurhashSyncPostWithHttpInfo(blurAsyncPostRequest);
+            ApiResponse<File> response = apiInstance.blurhashSyncPostWithHttpInfo(body);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -592,7 +592,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **blurAsyncPostRequest** | [**BlurAsyncPostRequest**](BlurAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp | |
 
 ### Return type
 

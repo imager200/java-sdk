@@ -179,7 +179,7 @@ ApiResponse<[**InfoResponse**](InfoResponse.md)>
 
 ## resizeAsyncPost
 
-> InfoResponse resizeAsyncPost(height, width, brightnessAsyncPostRequest, resamplingAlgorithm)
+> InfoResponse resizeAsyncPost(height, width, body, resamplingAlgorithm)
 
 
 
@@ -210,10 +210,10 @@ public class Example {
         ResizeApi apiInstance = new ResizeApi(defaultClient);
         Integer height = 56; // Integer | 
         Integer width = 56; // Integer | 
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         String resamplingAlgorithm = "lanczos"; // String | It allows changing the resampling algorithm used when resizing (resampling) the image.
         try {
-            InfoResponse result = apiInstance.resizeAsyncPost(height, width, brightnessAsyncPostRequest, resamplingAlgorithm);
+            InfoResponse result = apiInstance.resizeAsyncPost(height, width, body, resamplingAlgorithm);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling ResizeApi#resizeAsyncPost");
@@ -233,7 +233,7 @@ public class Example {
 |------------- | ------------- | ------------- | -------------|
 | **height** | **Integer**|  | |
 | **width** | **Integer**|  | |
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **resamplingAlgorithm** | **String**| It allows changing the resampling algorithm used when resizing (resampling) the image. | [optional] [default to lanczos] [enum: lanczos, linear, box, nearest_neighbor, catmull_rom] |
 
 ### Return type
@@ -258,7 +258,7 @@ public class Example {
 
 ## resizeAsyncPostWithHttpInfo
 
-> ApiResponse<InfoResponse> resizeAsyncPost resizeAsyncPostWithHttpInfo(height, width, brightnessAsyncPostRequest, resamplingAlgorithm)
+> ApiResponse<InfoResponse> resizeAsyncPost resizeAsyncPostWithHttpInfo(height, width, body, resamplingAlgorithm)
 
 
 
@@ -290,10 +290,10 @@ public class Example {
         ResizeApi apiInstance = new ResizeApi(defaultClient);
         Integer height = 56; // Integer | 
         Integer width = 56; // Integer | 
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         String resamplingAlgorithm = "lanczos"; // String | It allows changing the resampling algorithm used when resizing (resampling) the image.
         try {
-            ApiResponse<InfoResponse> response = apiInstance.resizeAsyncPostWithHttpInfo(height, width, brightnessAsyncPostRequest, resamplingAlgorithm);
+            ApiResponse<InfoResponse> response = apiInstance.resizeAsyncPostWithHttpInfo(height, width, body, resamplingAlgorithm);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -315,7 +315,7 @@ public class Example {
 |------------- | ------------- | ------------- | -------------|
 | **height** | **Integer**|  | |
 | **width** | **Integer**|  | |
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **resamplingAlgorithm** | **String**| It allows changing the resampling algorithm used when resizing (resampling) the image. | [optional] [default to lanczos] [enum: lanczos, linear, box, nearest_neighbor, catmull_rom] |
 
 ### Return type
@@ -503,7 +503,7 @@ ApiResponse<[**File**](File.md)>
 
 ## resizeSyncPost
 
-> File resizeSyncPost(height, width, brightnessAsyncPostRequest, resamplingAlgorithm)
+> File resizeSyncPost(height, width, body, resamplingAlgorithm)
 
 
 
@@ -534,10 +534,10 @@ public class Example {
         ResizeApi apiInstance = new ResizeApi(defaultClient);
         Integer height = 56; // Integer | 
         Integer width = 56; // Integer | 
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         String resamplingAlgorithm = "lanczos"; // String | It allows changing the resampling algorithm used when resizing (resampling) the image.
         try {
-            File result = apiInstance.resizeSyncPost(height, width, brightnessAsyncPostRequest, resamplingAlgorithm);
+            File result = apiInstance.resizeSyncPost(height, width, body, resamplingAlgorithm);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling ResizeApi#resizeSyncPost");
@@ -557,7 +557,7 @@ public class Example {
 |------------- | ------------- | ------------- | -------------|
 | **height** | **Integer**|  | |
 | **width** | **Integer**|  | |
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **resamplingAlgorithm** | **String**| It allows changing the resampling algorithm used when resizing (resampling) the image. | [optional] [default to lanczos] [enum: lanczos, linear, box, nearest_neighbor, catmull_rom] |
 
 ### Return type
@@ -582,7 +582,7 @@ public class Example {
 
 ## resizeSyncPostWithHttpInfo
 
-> ApiResponse<File> resizeSyncPost resizeSyncPostWithHttpInfo(height, width, brightnessAsyncPostRequest, resamplingAlgorithm)
+> ApiResponse<File> resizeSyncPost resizeSyncPostWithHttpInfo(height, width, body, resamplingAlgorithm)
 
 
 
@@ -614,10 +614,10 @@ public class Example {
         ResizeApi apiInstance = new ResizeApi(defaultClient);
         Integer height = 56; // Integer | 
         Integer width = 56; // Integer | 
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         String resamplingAlgorithm = "lanczos"; // String | It allows changing the resampling algorithm used when resizing (resampling) the image.
         try {
-            ApiResponse<File> response = apiInstance.resizeSyncPostWithHttpInfo(height, width, brightnessAsyncPostRequest, resamplingAlgorithm);
+            ApiResponse<File> response = apiInstance.resizeSyncPostWithHttpInfo(height, width, body, resamplingAlgorithm);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -639,7 +639,7 @@ public class Example {
 |------------- | ------------- | ------------- | -------------|
 | **height** | **Integer**|  | |
 | **width** | **Integer**|  | |
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **resamplingAlgorithm** | **String**| It allows changing the resampling algorithm used when resizing (resampling) the image. | [optional] [default to lanczos] [enum: lanczos, linear, box, nearest_neighbor, catmull_rom] |
 
 ### Return type

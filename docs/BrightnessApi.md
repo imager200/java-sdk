@@ -171,7 +171,7 @@ ApiResponse<[**InfoResponse**](InfoResponse.md)>
 
 ## brightnessAsyncPost
 
-> InfoResponse brightnessAsyncPost(brightnessAsyncPostRequest, percentage)
+> InfoResponse brightnessAsyncPost(body, percentage)
 
 
 
@@ -200,10 +200,10 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         BrightnessApi apiInstance = new BrightnessApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         BigDecimal percentage = new BigDecimal("0"); // BigDecimal | controls the brightness level
         try {
-            InfoResponse result = apiInstance.brightnessAsyncPost(brightnessAsyncPostRequest, percentage);
+            InfoResponse result = apiInstance.brightnessAsyncPost(body, percentage);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling BrightnessApi#brightnessAsyncPost");
@@ -221,7 +221,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **percentage** | **BigDecimal**| controls the brightness level | [optional] [default to 0] |
 
 ### Return type
@@ -246,7 +246,7 @@ public class Example {
 
 ## brightnessAsyncPostWithHttpInfo
 
-> ApiResponse<InfoResponse> brightnessAsyncPost brightnessAsyncPostWithHttpInfo(brightnessAsyncPostRequest, percentage)
+> ApiResponse<InfoResponse> brightnessAsyncPost brightnessAsyncPostWithHttpInfo(body, percentage)
 
 
 
@@ -276,10 +276,10 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         BrightnessApi apiInstance = new BrightnessApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         BigDecimal percentage = new BigDecimal("0"); // BigDecimal | controls the brightness level
         try {
-            ApiResponse<InfoResponse> response = apiInstance.brightnessAsyncPostWithHttpInfo(brightnessAsyncPostRequest, percentage);
+            ApiResponse<InfoResponse> response = apiInstance.brightnessAsyncPostWithHttpInfo(body, percentage);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -299,7 +299,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **percentage** | **BigDecimal**| controls the brightness level | [optional] [default to 0] |
 
 ### Return type
@@ -479,7 +479,7 @@ ApiResponse<[**File**](File.md)>
 
 ## brightnessSyncPost
 
-> File brightnessSyncPost(brightnessAsyncPostRequest, percentage)
+> File brightnessSyncPost(body, percentage)
 
 
 
@@ -508,10 +508,10 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         BrightnessApi apiInstance = new BrightnessApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         BigDecimal percentage = new BigDecimal("0"); // BigDecimal | controls the brightness level
         try {
-            File result = apiInstance.brightnessSyncPost(brightnessAsyncPostRequest, percentage);
+            File result = apiInstance.brightnessSyncPost(body, percentage);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling BrightnessApi#brightnessSyncPost");
@@ -529,7 +529,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **percentage** | **BigDecimal**| controls the brightness level | [optional] [default to 0] |
 
 ### Return type
@@ -554,7 +554,7 @@ public class Example {
 
 ## brightnessSyncPostWithHttpInfo
 
-> ApiResponse<File> brightnessSyncPost brightnessSyncPostWithHttpInfo(brightnessAsyncPostRequest, percentage)
+> ApiResponse<File> brightnessSyncPost brightnessSyncPostWithHttpInfo(body, percentage)
 
 
 
@@ -584,10 +584,10 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         BrightnessApi apiInstance = new BrightnessApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         BigDecimal percentage = new BigDecimal("0"); // BigDecimal | controls the brightness level
         try {
-            ApiResponse<File> response = apiInstance.brightnessSyncPostWithHttpInfo(brightnessAsyncPostRequest, percentage);
+            ApiResponse<File> response = apiInstance.brightnessSyncPostWithHttpInfo(body, percentage);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -607,7 +607,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **percentage** | **BigDecimal**| controls the brightness level | [optional] [default to 0] |
 
 ### Return type

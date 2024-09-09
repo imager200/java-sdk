@@ -191,7 +191,7 @@ ApiResponse<[**InfoResponse**](InfoResponse.md)>
 
 ## textAsyncPost
 
-> InfoResponse textAsyncPost(text, brightnessAsyncPostRequest, color, font, size, x, y)
+> InfoResponse textAsyncPost(text, body, color, font, size, x, y)
 
 
 
@@ -221,14 +221,14 @@ public class Example {
 
         TextApi apiInstance = new TextApi(defaultClient);
         String text = "text_example"; // String | the text to be added.
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         String color = "white"; // String | defines the color of the text. Must be a valid color name (supported names are specified here  [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)) or hexadecimal code.
         String font = "calibri"; // String | defines the font type name. Possible values can be found [here](https://api-docs.imager200.io/fonts_example/). (More fonts can be added on request)
         BigDecimal size = new BigDecimal("12"); // BigDecimal | the text size in pixels.
         Integer x = 50; // Integer | the x coordinate in pixels of the point where the text will be added.
         Integer y = 50; // Integer | the y coordinate in pixels of the point where the text will be added.
         try {
-            InfoResponse result = apiInstance.textAsyncPost(text, brightnessAsyncPostRequest, color, font, size, x, y);
+            InfoResponse result = apiInstance.textAsyncPost(text, body, color, font, size, x, y);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling TextApi#textAsyncPost");
@@ -247,7 +247,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **text** | **String**| the text to be added. | |
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **color** | **String**| defines the color of the text. Must be a valid color name (supported names are specified here  [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)) or hexadecimal code. | [optional] [default to white] |
 | **font** | **String**| defines the font type name. Possible values can be found [here](https://api-docs.imager200.io/fonts_example/). (More fonts can be added on request) | [optional] [default to calibri] |
 | **size** | **BigDecimal**| the text size in pixels. | [optional] [default to 12] |
@@ -276,7 +276,7 @@ public class Example {
 
 ## textAsyncPostWithHttpInfo
 
-> ApiResponse<InfoResponse> textAsyncPost textAsyncPostWithHttpInfo(text, brightnessAsyncPostRequest, color, font, size, x, y)
+> ApiResponse<InfoResponse> textAsyncPost textAsyncPostWithHttpInfo(text, body, color, font, size, x, y)
 
 
 
@@ -307,14 +307,14 @@ public class Example {
 
         TextApi apiInstance = new TextApi(defaultClient);
         String text = "text_example"; // String | the text to be added.
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         String color = "white"; // String | defines the color of the text. Must be a valid color name (supported names are specified here  [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)) or hexadecimal code.
         String font = "calibri"; // String | defines the font type name. Possible values can be found [here](https://api-docs.imager200.io/fonts_example/). (More fonts can be added on request)
         BigDecimal size = new BigDecimal("12"); // BigDecimal | the text size in pixels.
         Integer x = 50; // Integer | the x coordinate in pixels of the point where the text will be added.
         Integer y = 50; // Integer | the y coordinate in pixels of the point where the text will be added.
         try {
-            ApiResponse<InfoResponse> response = apiInstance.textAsyncPostWithHttpInfo(text, brightnessAsyncPostRequest, color, font, size, x, y);
+            ApiResponse<InfoResponse> response = apiInstance.textAsyncPostWithHttpInfo(text, body, color, font, size, x, y);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -335,7 +335,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **text** | **String**| the text to be added. | |
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **color** | **String**| defines the color of the text. Must be a valid color name (supported names are specified here  [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)) or hexadecimal code. | [optional] [default to white] |
 | **font** | **String**| defines the font type name. Possible values can be found [here](https://api-docs.imager200.io/fonts_example/). (More fonts can be added on request) | [optional] [default to calibri] |
 | **size** | **BigDecimal**| the text size in pixels. | [optional] [default to 12] |
@@ -539,7 +539,7 @@ ApiResponse<[**File**](File.md)>
 
 ## textSyncPost
 
-> File textSyncPost(text, brightnessAsyncPostRequest, color, font, size, x, y)
+> File textSyncPost(text, body, color, font, size, x, y)
 
 
 
@@ -569,14 +569,14 @@ public class Example {
 
         TextApi apiInstance = new TextApi(defaultClient);
         String text = "text_example"; // String | the text to be added.
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         String color = "white"; // String | defines the color of the text. Must be a valid color name (supported names are specified here  [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)) or hexadecimal code.
         String font = "calibri"; // String | defines the font type name. Possible values can be found [here](https://api-docs.imager200.io/fonts_example/). (More fonts can be added on request)
         BigDecimal size = new BigDecimal("12"); // BigDecimal | the text size in pixels.
         Integer x = 50; // Integer | the x coordinate in pixels of the point where the text will be added.
         Integer y = 50; // Integer | the y coordinate in pixels of the point where the text will be added.
         try {
-            File result = apiInstance.textSyncPost(text, brightnessAsyncPostRequest, color, font, size, x, y);
+            File result = apiInstance.textSyncPost(text, body, color, font, size, x, y);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling TextApi#textSyncPost");
@@ -595,7 +595,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **text** | **String**| the text to be added. | |
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **color** | **String**| defines the color of the text. Must be a valid color name (supported names are specified here  [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)) or hexadecimal code. | [optional] [default to white] |
 | **font** | **String**| defines the font type name. Possible values can be found [here](https://api-docs.imager200.io/fonts_example/). (More fonts can be added on request) | [optional] [default to calibri] |
 | **size** | **BigDecimal**| the text size in pixels. | [optional] [default to 12] |
@@ -624,7 +624,7 @@ public class Example {
 
 ## textSyncPostWithHttpInfo
 
-> ApiResponse<File> textSyncPost textSyncPostWithHttpInfo(text, brightnessAsyncPostRequest, color, font, size, x, y)
+> ApiResponse<File> textSyncPost textSyncPostWithHttpInfo(text, body, color, font, size, x, y)
 
 
 
@@ -655,14 +655,14 @@ public class Example {
 
         TextApi apiInstance = new TextApi(defaultClient);
         String text = "text_example"; // String | the text to be added.
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         String color = "white"; // String | defines the color of the text. Must be a valid color name (supported names are specified here  [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)) or hexadecimal code.
         String font = "calibri"; // String | defines the font type name. Possible values can be found [here](https://api-docs.imager200.io/fonts_example/). (More fonts can be added on request)
         BigDecimal size = new BigDecimal("12"); // BigDecimal | the text size in pixels.
         Integer x = 50; // Integer | the x coordinate in pixels of the point where the text will be added.
         Integer y = 50; // Integer | the y coordinate in pixels of the point where the text will be added.
         try {
-            ApiResponse<File> response = apiInstance.textSyncPostWithHttpInfo(text, brightnessAsyncPostRequest, color, font, size, x, y);
+            ApiResponse<File> response = apiInstance.textSyncPostWithHttpInfo(text, body, color, font, size, x, y);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -683,7 +683,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **text** | **String**| the text to be added. | |
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **color** | **String**| defines the color of the text. Must be a valid color name (supported names are specified here  [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)) or hexadecimal code. | [optional] [default to white] |
 | **font** | **String**| defines the font type name. Possible values can be found [here](https://api-docs.imager200.io/fonts_example/). (More fonts can be added on request) | [optional] [default to calibri] |
 | **size** | **BigDecimal**| the text size in pixels. | [optional] [default to 12] |

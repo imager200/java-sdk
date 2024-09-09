@@ -167,7 +167,7 @@ ApiResponse<[**InfoResponse**](InfoResponse.md)>
 
 ## convertAsyncPost
 
-> InfoResponse convertAsyncPost(brightnessAsyncPostRequest, targetFormat)
+> InfoResponse convertAsyncPost(body, targetFormat)
 
 
 
@@ -194,10 +194,10 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         ConvertApi apiInstance = new ConvertApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         String targetFormat = "jpeg"; // String | 
         try {
-            InfoResponse result = apiInstance.convertAsyncPost(brightnessAsyncPostRequest, targetFormat);
+            InfoResponse result = apiInstance.convertAsyncPost(body, targetFormat);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling ConvertApi#convertAsyncPost");
@@ -215,7 +215,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **targetFormat** | **String**|  | [optional] [enum: jpeg, png, bmp, ico, gif] |
 
 ### Return type
@@ -240,7 +240,7 @@ public class Example {
 
 ## convertAsyncPostWithHttpInfo
 
-> ApiResponse<InfoResponse> convertAsyncPost convertAsyncPostWithHttpInfo(brightnessAsyncPostRequest, targetFormat)
+> ApiResponse<InfoResponse> convertAsyncPost convertAsyncPostWithHttpInfo(body, targetFormat)
 
 
 
@@ -268,10 +268,10 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         ConvertApi apiInstance = new ConvertApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         String targetFormat = "jpeg"; // String | 
         try {
-            ApiResponse<InfoResponse> response = apiInstance.convertAsyncPostWithHttpInfo(brightnessAsyncPostRequest, targetFormat);
+            ApiResponse<InfoResponse> response = apiInstance.convertAsyncPostWithHttpInfo(body, targetFormat);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -291,7 +291,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **targetFormat** | **String**|  | [optional] [enum: jpeg, png, bmp, ico, gif] |
 
 ### Return type
@@ -467,7 +467,7 @@ ApiResponse<[**File**](File.md)>
 
 ## convertSyncPost
 
-> File convertSyncPost(brightnessAsyncPostRequest, targetFormat)
+> File convertSyncPost(body, targetFormat)
 
 
 
@@ -494,10 +494,10 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         ConvertApi apiInstance = new ConvertApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         String targetFormat = "jpeg"; // String | 
         try {
-            File result = apiInstance.convertSyncPost(brightnessAsyncPostRequest, targetFormat);
+            File result = apiInstance.convertSyncPost(body, targetFormat);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling ConvertApi#convertSyncPost");
@@ -515,7 +515,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **targetFormat** | **String**|  | [optional] [enum: jpeg, png, bmp, ico, gif] |
 
 ### Return type
@@ -540,7 +540,7 @@ public class Example {
 
 ## convertSyncPostWithHttpInfo
 
-> ApiResponse<File> convertSyncPost convertSyncPostWithHttpInfo(brightnessAsyncPostRequest, targetFormat)
+> ApiResponse<File> convertSyncPost convertSyncPostWithHttpInfo(body, targetFormat)
 
 
 
@@ -568,10 +568,10 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         ConvertApi apiInstance = new ConvertApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         String targetFormat = "jpeg"; // String | 
         try {
-            ApiResponse<File> response = apiInstance.convertSyncPostWithHttpInfo(brightnessAsyncPostRequest, targetFormat);
+            ApiResponse<File> response = apiInstance.convertSyncPostWithHttpInfo(body, targetFormat);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -591,7 +591,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **targetFormat** | **String**|  | [optional] [enum: jpeg, png, bmp, ico, gif] |
 
 ### Return type

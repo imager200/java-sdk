@@ -175,7 +175,7 @@ ApiResponse<[**InfoResponse**](InfoResponse.md)>
 
 ## rotateAsyncPost
 
-> InfoResponse rotateAsyncPost(brightnessAsyncPostRequest, angle, backgroundColor)
+> InfoResponse rotateAsyncPost(body, angle, backgroundColor)
 
 
 
@@ -204,11 +204,11 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         RotateApi apiInstance = new RotateApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         BigDecimal angle = new BigDecimal("90"); // BigDecimal | rotation angle in degrees
         String backgroundColor = "white"; // String | the color that should be used to fill the empty surfaces after rotating the image. Must be a valid color name (supported names are specified [here](https://www.w3schools.com/colors/colors_names.asp)) or hexadecimal code.
         try {
-            InfoResponse result = apiInstance.rotateAsyncPost(brightnessAsyncPostRequest, angle, backgroundColor);
+            InfoResponse result = apiInstance.rotateAsyncPost(body, angle, backgroundColor);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling RotateApi#rotateAsyncPost");
@@ -226,7 +226,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **angle** | **BigDecimal**| rotation angle in degrees | [optional] [default to 90] |
 | **backgroundColor** | **String**| the color that should be used to fill the empty surfaces after rotating the image. Must be a valid color name (supported names are specified [here](https://www.w3schools.com/colors/colors_names.asp)) or hexadecimal code. | [optional] [default to white] |
 
@@ -252,7 +252,7 @@ public class Example {
 
 ## rotateAsyncPostWithHttpInfo
 
-> ApiResponse<InfoResponse> rotateAsyncPost rotateAsyncPostWithHttpInfo(brightnessAsyncPostRequest, angle, backgroundColor)
+> ApiResponse<InfoResponse> rotateAsyncPost rotateAsyncPostWithHttpInfo(body, angle, backgroundColor)
 
 
 
@@ -282,11 +282,11 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         RotateApi apiInstance = new RotateApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         BigDecimal angle = new BigDecimal("90"); // BigDecimal | rotation angle in degrees
         String backgroundColor = "white"; // String | the color that should be used to fill the empty surfaces after rotating the image. Must be a valid color name (supported names are specified [here](https://www.w3schools.com/colors/colors_names.asp)) or hexadecimal code.
         try {
-            ApiResponse<InfoResponse> response = apiInstance.rotateAsyncPostWithHttpInfo(brightnessAsyncPostRequest, angle, backgroundColor);
+            ApiResponse<InfoResponse> response = apiInstance.rotateAsyncPostWithHttpInfo(body, angle, backgroundColor);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -306,7 +306,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **angle** | **BigDecimal**| rotation angle in degrees | [optional] [default to 90] |
 | **backgroundColor** | **String**| the color that should be used to fill the empty surfaces after rotating the image. Must be a valid color name (supported names are specified [here](https://www.w3schools.com/colors/colors_names.asp)) or hexadecimal code. | [optional] [default to white] |
 
@@ -491,7 +491,7 @@ ApiResponse<[**File**](File.md)>
 
 ## rotateSyncPost
 
-> File rotateSyncPost(brightnessAsyncPostRequest, angle, backgroundColor)
+> File rotateSyncPost(body, angle, backgroundColor)
 
 
 
@@ -520,11 +520,11 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         RotateApi apiInstance = new RotateApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         BigDecimal angle = new BigDecimal("90"); // BigDecimal | rotation angle in degrees
         String backgroundColor = "white"; // String | the color that should be used to fill the empty surfaces after rotating the image. Must be a valid color name (supported names are specified [here](https://www.w3schools.com/colors/colors_names.asp)) or hexadecimal code.
         try {
-            File result = apiInstance.rotateSyncPost(brightnessAsyncPostRequest, angle, backgroundColor);
+            File result = apiInstance.rotateSyncPost(body, angle, backgroundColor);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling RotateApi#rotateSyncPost");
@@ -542,7 +542,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **angle** | **BigDecimal**| rotation angle in degrees | [optional] [default to 90] |
 | **backgroundColor** | **String**| the color that should be used to fill the empty surfaces after rotating the image. Must be a valid color name (supported names are specified [here](https://www.w3schools.com/colors/colors_names.asp)) or hexadecimal code. | [optional] [default to white] |
 
@@ -568,7 +568,7 @@ public class Example {
 
 ## rotateSyncPostWithHttpInfo
 
-> ApiResponse<File> rotateSyncPost rotateSyncPostWithHttpInfo(brightnessAsyncPostRequest, angle, backgroundColor)
+> ApiResponse<File> rotateSyncPost rotateSyncPostWithHttpInfo(body, angle, backgroundColor)
 
 
 
@@ -598,11 +598,11 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         RotateApi apiInstance = new RotateApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         BigDecimal angle = new BigDecimal("90"); // BigDecimal | rotation angle in degrees
         String backgroundColor = "white"; // String | the color that should be used to fill the empty surfaces after rotating the image. Must be a valid color name (supported names are specified [here](https://www.w3schools.com/colors/colors_names.asp)) or hexadecimal code.
         try {
-            ApiResponse<File> response = apiInstance.rotateSyncPostWithHttpInfo(brightnessAsyncPostRequest, angle, backgroundColor);
+            ApiResponse<File> response = apiInstance.rotateSyncPostWithHttpInfo(body, angle, backgroundColor);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -622,7 +622,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 | **angle** | **BigDecimal**| rotation angle in degrees | [optional] [default to 90] |
 | **backgroundColor** | **String**| the color that should be used to fill the empty surfaces after rotating the image. Must be a valid color name (supported names are specified [here](https://www.w3schools.com/colors/colors_names.asp)) or hexadecimal code. | [optional] [default to white] |
 

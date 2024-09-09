@@ -167,7 +167,7 @@ ApiResponse<[**InfoResponse**](InfoResponse.md)>
 
 ## grayscaleAsyncPost
 
-> InfoResponse grayscaleAsyncPost(brightnessAsyncPostRequest)
+> InfoResponse grayscaleAsyncPost(body)
 
 
 
@@ -196,9 +196,9 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         GrayscaleApi apiInstance = new GrayscaleApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         try {
-            InfoResponse result = apiInstance.grayscaleAsyncPost(brightnessAsyncPostRequest);
+            InfoResponse result = apiInstance.grayscaleAsyncPost(body);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling GrayscaleApi#grayscaleAsyncPost");
@@ -216,7 +216,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 
 ### Return type
 
@@ -240,7 +240,7 @@ public class Example {
 
 ## grayscaleAsyncPostWithHttpInfo
 
-> ApiResponse<InfoResponse> grayscaleAsyncPost grayscaleAsyncPostWithHttpInfo(brightnessAsyncPostRequest)
+> ApiResponse<InfoResponse> grayscaleAsyncPost grayscaleAsyncPostWithHttpInfo(body)
 
 
 
@@ -270,9 +270,9 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         GrayscaleApi apiInstance = new GrayscaleApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         try {
-            ApiResponse<InfoResponse> response = apiInstance.grayscaleAsyncPostWithHttpInfo(brightnessAsyncPostRequest);
+            ApiResponse<InfoResponse> response = apiInstance.grayscaleAsyncPostWithHttpInfo(body);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -292,7 +292,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 
 ### Return type
 
@@ -467,7 +467,7 @@ ApiResponse<[**File**](File.md)>
 
 ## grayscaleSyncPost
 
-> File grayscaleSyncPost(brightnessAsyncPostRequest)
+> File grayscaleSyncPost(body)
 
 
 
@@ -496,9 +496,9 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         GrayscaleApi apiInstance = new GrayscaleApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         try {
-            File result = apiInstance.grayscaleSyncPost(brightnessAsyncPostRequest);
+            File result = apiInstance.grayscaleSyncPost(body);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling GrayscaleApi#grayscaleSyncPost");
@@ -516,7 +516,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 
 ### Return type
 
@@ -540,7 +540,7 @@ public class Example {
 
 ## grayscaleSyncPostWithHttpInfo
 
-> ApiResponse<File> grayscaleSyncPost grayscaleSyncPostWithHttpInfo(brightnessAsyncPostRequest)
+> ApiResponse<File> grayscaleSyncPost grayscaleSyncPostWithHttpInfo(body)
 
 
 
@@ -570,9 +570,9 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         GrayscaleApi apiInstance = new GrayscaleApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         try {
-            ApiResponse<File> response = apiInstance.grayscaleSyncPostWithHttpInfo(brightnessAsyncPostRequest);
+            ApiResponse<File> response = apiInstance.grayscaleSyncPostWithHttpInfo(body);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -592,7 +592,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 
 ### Return type
 

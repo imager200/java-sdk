@@ -171,7 +171,7 @@ ApiResponse<[**InfoResponse**](InfoResponse.md)>
 
 ## blurAsyncPost
 
-> InfoResponse blurAsyncPost(blurAsyncPostRequest, sigma)
+> InfoResponse blurAsyncPost(body, sigma)
 
 
 
@@ -200,10 +200,10 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         BlurApi apiInstance = new BlurApi(defaultClient);
-        BlurAsyncPostRequest blurAsyncPostRequest = new BlurAsyncPostRequest(); // BlurAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp
         BigDecimal sigma = new BigDecimal("10"); // BigDecimal | controls the strength of the blur
         try {
-            InfoResponse result = apiInstance.blurAsyncPost(blurAsyncPostRequest, sigma);
+            InfoResponse result = apiInstance.blurAsyncPost(body, sigma);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling BlurApi#blurAsyncPost");
@@ -221,7 +221,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **blurAsyncPostRequest** | [**BlurAsyncPostRequest**](BlurAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp | |
 | **sigma** | **BigDecimal**| controls the strength of the blur | [optional] [default to 10] |
 
 ### Return type
@@ -246,7 +246,7 @@ public class Example {
 
 ## blurAsyncPostWithHttpInfo
 
-> ApiResponse<InfoResponse> blurAsyncPost blurAsyncPostWithHttpInfo(blurAsyncPostRequest, sigma)
+> ApiResponse<InfoResponse> blurAsyncPost blurAsyncPostWithHttpInfo(body, sigma)
 
 
 
@@ -276,10 +276,10 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         BlurApi apiInstance = new BlurApi(defaultClient);
-        BlurAsyncPostRequest blurAsyncPostRequest = new BlurAsyncPostRequest(); // BlurAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp
         BigDecimal sigma = new BigDecimal("10"); // BigDecimal | controls the strength of the blur
         try {
-            ApiResponse<InfoResponse> response = apiInstance.blurAsyncPostWithHttpInfo(blurAsyncPostRequest, sigma);
+            ApiResponse<InfoResponse> response = apiInstance.blurAsyncPostWithHttpInfo(body, sigma);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -299,7 +299,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **blurAsyncPostRequest** | [**BlurAsyncPostRequest**](BlurAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp | |
 | **sigma** | **BigDecimal**| controls the strength of the blur | [optional] [default to 10] |
 
 ### Return type
@@ -479,7 +479,7 @@ ApiResponse<[**File**](File.md)>
 
 ## blurSyncPost
 
-> File blurSyncPost(blurAsyncPostRequest, sigma)
+> File blurSyncPost(body, sigma)
 
 
 
@@ -508,10 +508,10 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         BlurApi apiInstance = new BlurApi(defaultClient);
-        BlurAsyncPostRequest blurAsyncPostRequest = new BlurAsyncPostRequest(); // BlurAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp
         BigDecimal sigma = new BigDecimal("10"); // BigDecimal | controls the strength of the blur
         try {
-            File result = apiInstance.blurSyncPost(blurAsyncPostRequest, sigma);
+            File result = apiInstance.blurSyncPost(body, sigma);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling BlurApi#blurSyncPost");
@@ -529,7 +529,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **blurAsyncPostRequest** | [**BlurAsyncPostRequest**](BlurAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp | |
 | **sigma** | **BigDecimal**| controls the strength of the blur | [optional] [default to 10] |
 
 ### Return type
@@ -554,7 +554,7 @@ public class Example {
 
 ## blurSyncPostWithHttpInfo
 
-> ApiResponse<File> blurSyncPost blurSyncPostWithHttpInfo(blurAsyncPostRequest, sigma)
+> ApiResponse<File> blurSyncPost blurSyncPostWithHttpInfo(body, sigma)
 
 
 
@@ -584,10 +584,10 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         BlurApi apiInstance = new BlurApi(defaultClient);
-        BlurAsyncPostRequest blurAsyncPostRequest = new BlurAsyncPostRequest(); // BlurAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp
         BigDecimal sigma = new BigDecimal("10"); // BigDecimal | controls the strength of the blur
         try {
-            ApiResponse<File> response = apiInstance.blurSyncPostWithHttpInfo(blurAsyncPostRequest, sigma);
+            ApiResponse<File> response = apiInstance.blurSyncPostWithHttpInfo(body, sigma);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -607,7 +607,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **blurAsyncPostRequest** | [**BlurAsyncPostRequest**](BlurAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp | |
 | **sigma** | **BigDecimal**| controls the strength of the blur | [optional] [default to 10] |
 
 ### Return type

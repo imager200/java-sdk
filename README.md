@@ -10,24 +10,26 @@ Building the API client library requires:
 1. Java 11+
 2. Maven/Gradle
 
+The github repository: https://maven.pkg.github.com/imager200/java-sdk needs to be added to list of source repositories in Maven/Gradle.
+
 ## Installation
-
-To install the API client library to your local Maven repository, simply execute:
-
-```shell
-mvn clean install
-```
-
-To deploy it to a remote Maven repository instead, configure the settings of the repository and execute:
-
-```shell
-mvn clean deploy
-```
-
-Refer to the [OSSRH Guide](http://central.sonatype.org/pages/ossrh-guide.html) for more information.
 
 ### Maven
 
+```xml
+  <repositories>
+        <repository>
+          <id>central</id>
+          <url>https://repo1.maven.org/maven2</url>
+        </repository>
+        <repository>
+          <id>github</id>
+          <name>GitHub imager200 Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/imager200/java-sdk</url>
+        </repository>
+      </repositories>
+```
+after adding the repo, the dependency needs to be added to the `dependencies` section:
 ```xml
 <dependency>
   <groupId>io.imager200</groupId>
@@ -38,6 +40,15 @@ Refer to the [OSSRH Guide](http://central.sonatype.org/pages/ossrh-guide.html) f
 ```
 
 ### Gradle users
+
+```groovy
+repositories {
+    maven {
+        url = uri("https://maven.pkg.github.com/imager200/java-sdk")
+   }
+}
+```
+after adding the repo, the dependency needs to be added:
 
 ```groovy
 compile "io.imager200:java-sdk:1.0"

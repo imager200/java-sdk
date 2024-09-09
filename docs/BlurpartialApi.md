@@ -187,7 +187,7 @@ ApiResponse<[**InfoResponse**](InfoResponse.md)>
 
 ## blurpartialAsyncPost
 
-> InfoResponse blurpartialAsyncPost(x0, x1, y0, y1, blurAsyncPostRequest, sigma)
+> InfoResponse blurpartialAsyncPost(x0, x1, y0, y1, body, sigma)
 
 
 
@@ -220,10 +220,10 @@ public class Example {
         Integer x1 = 56; // Integer | defines the x coordinate of the second point of the rectangle to blur
         Integer y0 = 56; // Integer | defines the y coordinate of the first point of the rectangle to blur
         Integer y1 = 56; // Integer | defines the y coordinate of the second point of the rectangle to blur.
-        BlurAsyncPostRequest blurAsyncPostRequest = new BlurAsyncPostRequest(); // BlurAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp
         BigDecimal sigma = new BigDecimal("10"); // BigDecimal | controls the strength of the blur
         try {
-            InfoResponse result = apiInstance.blurpartialAsyncPost(x0, x1, y0, y1, blurAsyncPostRequest, sigma);
+            InfoResponse result = apiInstance.blurpartialAsyncPost(x0, x1, y0, y1, body, sigma);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling BlurpartialApi#blurpartialAsyncPost");
@@ -245,7 +245,7 @@ public class Example {
 | **x1** | **Integer**| defines the x coordinate of the second point of the rectangle to blur | |
 | **y0** | **Integer**| defines the y coordinate of the first point of the rectangle to blur | |
 | **y1** | **Integer**| defines the y coordinate of the second point of the rectangle to blur. | |
-| **blurAsyncPostRequest** | [**BlurAsyncPostRequest**](BlurAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp | |
 | **sigma** | **BigDecimal**| controls the strength of the blur | [optional] [default to 10] |
 
 ### Return type
@@ -270,7 +270,7 @@ public class Example {
 
 ## blurpartialAsyncPostWithHttpInfo
 
-> ApiResponse<InfoResponse> blurpartialAsyncPost blurpartialAsyncPostWithHttpInfo(x0, x1, y0, y1, blurAsyncPostRequest, sigma)
+> ApiResponse<InfoResponse> blurpartialAsyncPost blurpartialAsyncPostWithHttpInfo(x0, x1, y0, y1, body, sigma)
 
 
 
@@ -304,10 +304,10 @@ public class Example {
         Integer x1 = 56; // Integer | defines the x coordinate of the second point of the rectangle to blur
         Integer y0 = 56; // Integer | defines the y coordinate of the first point of the rectangle to blur
         Integer y1 = 56; // Integer | defines the y coordinate of the second point of the rectangle to blur.
-        BlurAsyncPostRequest blurAsyncPostRequest = new BlurAsyncPostRequest(); // BlurAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp
         BigDecimal sigma = new BigDecimal("10"); // BigDecimal | controls the strength of the blur
         try {
-            ApiResponse<InfoResponse> response = apiInstance.blurpartialAsyncPostWithHttpInfo(x0, x1, y0, y1, blurAsyncPostRequest, sigma);
+            ApiResponse<InfoResponse> response = apiInstance.blurpartialAsyncPostWithHttpInfo(x0, x1, y0, y1, body, sigma);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -331,7 +331,7 @@ public class Example {
 | **x1** | **Integer**| defines the x coordinate of the second point of the rectangle to blur | |
 | **y0** | **Integer**| defines the y coordinate of the first point of the rectangle to blur | |
 | **y1** | **Integer**| defines the y coordinate of the second point of the rectangle to blur. | |
-| **blurAsyncPostRequest** | [**BlurAsyncPostRequest**](BlurAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp | |
 | **sigma** | **BigDecimal**| controls the strength of the blur | [optional] [default to 10] |
 
 ### Return type
@@ -527,7 +527,7 @@ ApiResponse<[**File**](File.md)>
 
 ## blurpartialSyncPost
 
-> File blurpartialSyncPost(x0, x1, y0, y1, blurAsyncPostRequest, sigma)
+> File blurpartialSyncPost(x0, x1, y0, y1, body, sigma)
 
 
 
@@ -560,10 +560,10 @@ public class Example {
         Integer x1 = 56; // Integer | defines the x coordinate of the second point of the rectangle to blur
         Integer y0 = 56; // Integer | defines the y coordinate of the first point of the rectangle to blur
         Integer y1 = 56; // Integer | defines the y coordinate of the second point of the rectangle to blur.
-        BlurAsyncPostRequest blurAsyncPostRequest = new BlurAsyncPostRequest(); // BlurAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp
         BigDecimal sigma = new BigDecimal("10"); // BigDecimal | controls the strength of the blur
         try {
-            File result = apiInstance.blurpartialSyncPost(x0, x1, y0, y1, blurAsyncPostRequest, sigma);
+            File result = apiInstance.blurpartialSyncPost(x0, x1, y0, y1, body, sigma);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling BlurpartialApi#blurpartialSyncPost");
@@ -585,7 +585,7 @@ public class Example {
 | **x1** | **Integer**| defines the x coordinate of the second point of the rectangle to blur | |
 | **y0** | **Integer**| defines the y coordinate of the first point of the rectangle to blur | |
 | **y1** | **Integer**| defines the y coordinate of the second point of the rectangle to blur. | |
-| **blurAsyncPostRequest** | [**BlurAsyncPostRequest**](BlurAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp | |
 | **sigma** | **BigDecimal**| controls the strength of the blur | [optional] [default to 10] |
 
 ### Return type
@@ -610,7 +610,7 @@ public class Example {
 
 ## blurpartialSyncPostWithHttpInfo
 
-> ApiResponse<File> blurpartialSyncPost blurpartialSyncPostWithHttpInfo(x0, x1, y0, y1, blurAsyncPostRequest, sigma)
+> ApiResponse<File> blurpartialSyncPost blurpartialSyncPostWithHttpInfo(x0, x1, y0, y1, body, sigma)
 
 
 
@@ -644,10 +644,10 @@ public class Example {
         Integer x1 = 56; // Integer | defines the x coordinate of the second point of the rectangle to blur
         Integer y0 = 56; // Integer | defines the y coordinate of the first point of the rectangle to blur
         Integer y1 = 56; // Integer | defines the y coordinate of the second point of the rectangle to blur.
-        BlurAsyncPostRequest blurAsyncPostRequest = new BlurAsyncPostRequest(); // BlurAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp
         BigDecimal sigma = new BigDecimal("10"); // BigDecimal | controls the strength of the blur
         try {
-            ApiResponse<File> response = apiInstance.blurpartialSyncPostWithHttpInfo(x0, x1, y0, y1, blurAsyncPostRequest, sigma);
+            ApiResponse<File> response = apiInstance.blurpartialSyncPostWithHttpInfo(x0, x1, y0, y1, body, sigma);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -671,7 +671,7 @@ public class Example {
 | **x1** | **Integer**| defines the x coordinate of the second point of the rectangle to blur | |
 | **y0** | **Integer**| defines the y coordinate of the first point of the rectangle to blur | |
 | **y1** | **Integer**| defines the y coordinate of the second point of the rectangle to blur. | |
-| **blurAsyncPostRequest** | [**BlurAsyncPostRequest**](BlurAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp | |
 | **sigma** | **BigDecimal**| controls the strength of the blur | [optional] [default to 10] |
 
 ### Return type

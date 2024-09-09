@@ -315,7 +315,7 @@ ApiResponse<[**PipelineExecutionResult**](PipelineExecutionResult.md)>
 
 ## pipelinePost
 
-> SuccessResponse pipelinePost(name, pipelinePostRequest)
+> SuccessResponse pipelinePost(name, body)
 
 
 
@@ -343,9 +343,9 @@ public class Example {
 
         PipelineApi apiInstance = new PipelineApi(defaultClient);
         String name = "name_example"; // String | the name of the pipeline
-        PipelinePostRequest pipelinePostRequest = new PipelinePostRequest(); // PipelinePostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif (depending on operations)
         try {
-            SuccessResponse result = apiInstance.pipelinePost(name, pipelinePostRequest);
+            SuccessResponse result = apiInstance.pipelinePost(name, body);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling PipelineApi#pipelinePost");
@@ -364,7 +364,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **name** | **String**| the name of the pipeline | |
-| **pipelinePostRequest** | [**PipelinePostRequest**](PipelinePostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif (depending on operations) | |
 
 ### Return type
 
@@ -377,7 +377,7 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: image/bmp, image/gif, image/jpeg, image/png
+- **Content-Type**: application/octet-stream
 - **Accept**: application/json
 
 ### HTTP response details
@@ -389,7 +389,7 @@ public class Example {
 
 ## pipelinePostWithHttpInfo
 
-> ApiResponse<SuccessResponse> pipelinePost pipelinePostWithHttpInfo(name, pipelinePostRequest)
+> ApiResponse<SuccessResponse> pipelinePost pipelinePostWithHttpInfo(name, body)
 
 
 
@@ -418,9 +418,9 @@ public class Example {
 
         PipelineApi apiInstance = new PipelineApi(defaultClient);
         String name = "name_example"; // String | the name of the pipeline
-        PipelinePostRequest pipelinePostRequest = new PipelinePostRequest(); // PipelinePostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif (depending on operations)
         try {
-            ApiResponse<SuccessResponse> response = apiInstance.pipelinePostWithHttpInfo(name, pipelinePostRequest);
+            ApiResponse<SuccessResponse> response = apiInstance.pipelinePostWithHttpInfo(name, body);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -441,7 +441,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **name** | **String**| the name of the pipeline | |
-| **pipelinePostRequest** | [**PipelinePostRequest**](PipelinePostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif (depending on operations) | |
 
 ### Return type
 
@@ -454,7 +454,7 @@ ApiResponse<[**SuccessResponse**](SuccessResponse.md)>
 
 ### HTTP request headers
 
-- **Content-Type**: image/bmp, image/gif, image/jpeg, image/png
+- **Content-Type**: application/octet-stream
 - **Accept**: application/json
 
 ### HTTP response details

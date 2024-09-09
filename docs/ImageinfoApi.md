@@ -163,7 +163,7 @@ ApiResponse<[**ImageMetadata**](ImageMetadata.md)>
 
 ## imageinfoSyncPost
 
-> ImageMetadata imageinfoSyncPost(brightnessAsyncPostRequest)
+> ImageMetadata imageinfoSyncPost(body)
 
 
 
@@ -192,9 +192,9 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         ImageinfoApi apiInstance = new ImageinfoApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         try {
-            ImageMetadata result = apiInstance.imageinfoSyncPost(brightnessAsyncPostRequest);
+            ImageMetadata result = apiInstance.imageinfoSyncPost(body);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling ImageinfoApi#imageinfoSyncPost");
@@ -212,7 +212,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 
 ### Return type
 
@@ -236,7 +236,7 @@ public class Example {
 
 ## imageinfoSyncPostWithHttpInfo
 
-> ApiResponse<ImageMetadata> imageinfoSyncPost imageinfoSyncPostWithHttpInfo(brightnessAsyncPostRequest)
+> ApiResponse<ImageMetadata> imageinfoSyncPost imageinfoSyncPostWithHttpInfo(body)
 
 
 
@@ -266,9 +266,9 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         ImageinfoApi apiInstance = new ImageinfoApi(defaultClient);
-        BrightnessAsyncPostRequest brightnessAsyncPostRequest = new BrightnessAsyncPostRequest(); // BrightnessAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png,bmp,gif
         try {
-            ApiResponse<ImageMetadata> response = apiInstance.imageinfoSyncPostWithHttpInfo(brightnessAsyncPostRequest);
+            ApiResponse<ImageMetadata> response = apiInstance.imageinfoSyncPostWithHttpInfo(body);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -288,7 +288,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **brightnessAsyncPostRequest** | [**BrightnessAsyncPostRequest**](BrightnessAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png,bmp,gif | |
 
 ### Return type
 

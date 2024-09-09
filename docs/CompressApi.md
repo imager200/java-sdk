@@ -179,7 +179,7 @@ ApiResponse<[**InfoResponse**](InfoResponse.md)>
 
 ## compressAsyncPost
 
-> InfoResponse compressAsyncPost(compressAsyncPostRequest, jpegQuality, pngOptimizationLevel, progressiveJpeg)
+> InfoResponse compressAsyncPost(body, jpegQuality, pngOptimizationLevel, progressiveJpeg)
 
 
 
@@ -208,12 +208,12 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         CompressApi apiInstance = new CompressApi(defaultClient);
-        CompressAsyncPostRequest compressAsyncPostRequest = new CompressAsyncPostRequest(); // CompressAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png
         Integer jpegQuality = 95; // Integer | defines the jpeg quality level (the higher is the value, the better quality of the image). Only applied if the image is of type jpeg. (uses MozJPEG behind the curtains)
         Integer pngOptimizationLevel = 3; // Integer | defines the png optimization level (higher value means a smaller size and longer compression time). Only applied if image is of type png.
         Boolean progressiveJpeg = true; // Boolean | It toggles the generation of a progressive JPEG. A \"false\" value generates a baseline JPEG
         try {
-            InfoResponse result = apiInstance.compressAsyncPost(compressAsyncPostRequest, jpegQuality, pngOptimizationLevel, progressiveJpeg);
+            InfoResponse result = apiInstance.compressAsyncPost(body, jpegQuality, pngOptimizationLevel, progressiveJpeg);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling CompressApi#compressAsyncPost");
@@ -231,7 +231,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **compressAsyncPostRequest** | [**CompressAsyncPostRequest**](CompressAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png | |
 | **jpegQuality** | **Integer**| defines the jpeg quality level (the higher is the value, the better quality of the image). Only applied if the image is of type jpeg. (uses MozJPEG behind the curtains) | [optional] [default to 95] |
 | **pngOptimizationLevel** | **Integer**| defines the png optimization level (higher value means a smaller size and longer compression time). Only applied if image is of type png. | [optional] [default to 3] |
 | **progressiveJpeg** | **Boolean**| It toggles the generation of a progressive JPEG. A \&quot;false\&quot; value generates a baseline JPEG | [optional] [default to true] |
@@ -258,7 +258,7 @@ public class Example {
 
 ## compressAsyncPostWithHttpInfo
 
-> ApiResponse<InfoResponse> compressAsyncPost compressAsyncPostWithHttpInfo(compressAsyncPostRequest, jpegQuality, pngOptimizationLevel, progressiveJpeg)
+> ApiResponse<InfoResponse> compressAsyncPost compressAsyncPostWithHttpInfo(body, jpegQuality, pngOptimizationLevel, progressiveJpeg)
 
 
 
@@ -288,12 +288,12 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         CompressApi apiInstance = new CompressApi(defaultClient);
-        CompressAsyncPostRequest compressAsyncPostRequest = new CompressAsyncPostRequest(); // CompressAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png
         Integer jpegQuality = 95; // Integer | defines the jpeg quality level (the higher is the value, the better quality of the image). Only applied if the image is of type jpeg. (uses MozJPEG behind the curtains)
         Integer pngOptimizationLevel = 3; // Integer | defines the png optimization level (higher value means a smaller size and longer compression time). Only applied if image is of type png.
         Boolean progressiveJpeg = true; // Boolean | It toggles the generation of a progressive JPEG. A \"false\" value generates a baseline JPEG
         try {
-            ApiResponse<InfoResponse> response = apiInstance.compressAsyncPostWithHttpInfo(compressAsyncPostRequest, jpegQuality, pngOptimizationLevel, progressiveJpeg);
+            ApiResponse<InfoResponse> response = apiInstance.compressAsyncPostWithHttpInfo(body, jpegQuality, pngOptimizationLevel, progressiveJpeg);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -313,7 +313,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **compressAsyncPostRequest** | [**CompressAsyncPostRequest**](CompressAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png | |
 | **jpegQuality** | **Integer**| defines the jpeg quality level (the higher is the value, the better quality of the image). Only applied if the image is of type jpeg. (uses MozJPEG behind the curtains) | [optional] [default to 95] |
 | **pngOptimizationLevel** | **Integer**| defines the png optimization level (higher value means a smaller size and longer compression time). Only applied if image is of type png. | [optional] [default to 3] |
 | **progressiveJpeg** | **Boolean**| It toggles the generation of a progressive JPEG. A \&quot;false\&quot; value generates a baseline JPEG | [optional] [default to true] |
@@ -503,7 +503,7 @@ ApiResponse<[**File**](File.md)>
 
 ## compressSyncPost
 
-> File compressSyncPost(compressAsyncPostRequest, jpegQuality, pngOptimizationLevel, progressiveJpeg)
+> File compressSyncPost(body, jpegQuality, pngOptimizationLevel, progressiveJpeg)
 
 
 
@@ -532,12 +532,12 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         CompressApi apiInstance = new CompressApi(defaultClient);
-        CompressAsyncPostRequest compressAsyncPostRequest = new CompressAsyncPostRequest(); // CompressAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png
         Integer jpegQuality = 95; // Integer | defines the jpeg quality level (the higher is the value, the better quality of the image). Only applied if the image is of type jpeg. (uses MozJPEG behind the curtains)
         Integer pngOptimizationLevel = 3; // Integer | defines the png optimization level (higher value means a smaller size and longer compression time). Only applied if image is of type png.
         Boolean progressiveJpeg = true; // Boolean | It toggles the generation of a progressive JPEG. A \"false\" value generates a baseline JPEG
         try {
-            File result = apiInstance.compressSyncPost(compressAsyncPostRequest, jpegQuality, pngOptimizationLevel, progressiveJpeg);
+            File result = apiInstance.compressSyncPost(body, jpegQuality, pngOptimizationLevel, progressiveJpeg);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling CompressApi#compressSyncPost");
@@ -555,7 +555,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **compressAsyncPostRequest** | [**CompressAsyncPostRequest**](CompressAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png | |
 | **jpegQuality** | **Integer**| defines the jpeg quality level (the higher is the value, the better quality of the image). Only applied if the image is of type jpeg. (uses MozJPEG behind the curtains) | [optional] [default to 95] |
 | **pngOptimizationLevel** | **Integer**| defines the png optimization level (higher value means a smaller size and longer compression time). Only applied if image is of type png. | [optional] [default to 3] |
 | **progressiveJpeg** | **Boolean**| It toggles the generation of a progressive JPEG. A \&quot;false\&quot; value generates a baseline JPEG | [optional] [default to true] |
@@ -582,7 +582,7 @@ public class Example {
 
 ## compressSyncPostWithHttpInfo
 
-> ApiResponse<File> compressSyncPost compressSyncPostWithHttpInfo(compressAsyncPostRequest, jpegQuality, pngOptimizationLevel, progressiveJpeg)
+> ApiResponse<File> compressSyncPost compressSyncPostWithHttpInfo(body, jpegQuality, pngOptimizationLevel, progressiveJpeg)
 
 
 
@@ -612,12 +612,12 @@ public class Example {
         //ApiKeyAuth.setApiKeyPrefix("Token");
 
         CompressApi apiInstance = new CompressApi(defaultClient);
-        CompressAsyncPostRequest compressAsyncPostRequest = new CompressAsyncPostRequest(); // CompressAsyncPostRequest | 
+        File body = new File("/path/to/file"); // File | image binary data, acceptable formats: jpeg,png
         Integer jpegQuality = 95; // Integer | defines the jpeg quality level (the higher is the value, the better quality of the image). Only applied if the image is of type jpeg. (uses MozJPEG behind the curtains)
         Integer pngOptimizationLevel = 3; // Integer | defines the png optimization level (higher value means a smaller size and longer compression time). Only applied if image is of type png.
         Boolean progressiveJpeg = true; // Boolean | It toggles the generation of a progressive JPEG. A \"false\" value generates a baseline JPEG
         try {
-            ApiResponse<File> response = apiInstance.compressSyncPostWithHttpInfo(compressAsyncPostRequest, jpegQuality, pngOptimizationLevel, progressiveJpeg);
+            ApiResponse<File> response = apiInstance.compressSyncPostWithHttpInfo(body, jpegQuality, pngOptimizationLevel, progressiveJpeg);
             System.out.println("Status code: " + response.getStatusCode());
             System.out.println("Response headers: " + response.getHeaders());
             System.out.println("Response body: " + response.getData());
@@ -637,7 +637,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **compressAsyncPostRequest** | [**CompressAsyncPostRequest**](CompressAsyncPostRequest.md)|  | |
+| **body** | **File**| image binary data, acceptable formats: jpeg,png | |
 | **jpegQuality** | **Integer**| defines the jpeg quality level (the higher is the value, the better quality of the image). Only applied if the image is of type jpeg. (uses MozJPEG behind the curtains) | [optional] [default to 95] |
 | **pngOptimizationLevel** | **Integer**| defines the png optimization level (higher value means a smaller size and longer compression time). Only applied if image is of type png. | [optional] [default to 3] |
 | **progressiveJpeg** | **Boolean**| It toggles the generation of a progressive JPEG. A \&quot;false\&quot; value generates a baseline JPEG | [optional] [default to true] |

@@ -33,6 +33,8 @@ gradlew
 settings.gradle
 gradlew.bat
 src/main/AndroidManifest.xml
+src/test
+src/test/**
 .gradle
 README.md
 pom.xml
