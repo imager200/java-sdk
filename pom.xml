@@ -5,14 +5,14 @@
     <artifactId>java-sdk</artifactId>
     <packaging>jar</packaging>
     <name>java-sdk</name>
-    <version>1.0</version>
+    <version>1.0.0</version>
     <url>https://github.com/imager200/java-sdk</url>
     <description>java client for imager200 API</description>
 
     <licenses>
         <license>
             <name>MIT License</name>
-            <url>http://unlicense.org</url>
+            <url>https://github.com/imager200/java-sdk/blob/main/LICENSE</url>
         </license>
     </licenses>
 
